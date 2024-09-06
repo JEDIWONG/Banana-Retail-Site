@@ -1,0 +1,110 @@
+.home-why-container{
+    
+    width: 100%;
+    text-align: center;
+}
+
+.home-why-card{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgb(224, 224, 224);
+    border-radius: 20px;
+    margin-inline: 5%;
+    padding: 10px;
+    padding-inline:3%;
+    text-align: center;
+}
+
+.home-why-card p{ 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.home-section{
+    margin-inline: 5%;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(76, 76, 76);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+}
+
+.home-section-card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: -5px -3px 10px rgb(62, 62, 62);
+    width: 60%;
+    height: fit-content;
+    margin-inline: 20%;
+    margin-bottom: 5%;
+}
+
+.home-section-card img{
+    width: 50%;
+
+}
+
+.home-section-details{
+    width: 50%;
+    background-color: rgb(69, 61, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.home-section-details p{
+    color: rgb(190, 220, 116);
+    text-align: justify;
+    margin-inline: 20%;
+    margin-top: 80px;
+    text-shadow: 0px 0px 10px black;
+    font-size: 18px;
+}
+
+.home-button{
+    background-image: linear-gradient(rgb(255, 179, 0) 30%,rgb(253, 201, 79));
+    box-shadow: 0px 5px 10px rgb(168, 168, 168); 
+    color: rgb(134, 0, 0);
+    border: none;
+    height: 50px;
+    margin-top:30px;
+    margin-inline: 20%;
+    font-size: 22px;
+    font-weight: bold
+}
+
+.home-button:hover{
+    
+    background-image: none;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    
+}
+
+.home-member-card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgb(98, 98, 98);
+    border-radius: 10px;
+    padding-inline: 1%;
+    border: 10px dashed black;
+}
+
+.home-member-card h1{
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.home-member-card ul{
+    padding-block: 10px;
+}
+
+
+

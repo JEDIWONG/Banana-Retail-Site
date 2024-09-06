@@ -1,0 +1,83 @@
+import { useParams } from "react-router-dom";
+import "../style/ProductPage.css"
+import { Product } from "./Product";
+
+function Specs_item(props){
+
+    return(
+        <>  
+            <div className="specs-item" >
+                <p style={{minWidth:"20%",backgroundColor:"black",color:"white",borderRadius:"30px",textAlign:"center",paddingInline:"5%",position:"relative",left:"-5%",bottom:"-3px"}}>{props.name}</p>
+                <p style={{marginLeft:"20%"}}>{props.value}</p>
+            </div>
+        </>
+    );
+
+}
+
+function ProductPage(){
+
+    const {id} = useParams();
+    const product = Product[id-1];
+
+    return(
+        <>
+            <div className="product-page-container">
+                
+                <div className="product-page-card">
+                    <div className="product-gallery">
+                    <button className="button-back">Back</button>
+                        <img className="product-page-image" src={product.imgUrl}></img>
+
+                        <div className="product-gallery-container">
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                            <img className="product-page-image" src={product.imgUrl}></img>
+                        </div>
+                    </div>
+
+                    <div className="product-page-info">
+                        
+                        <div className="product-info-header">
+                            <p className="product-info-name">{product.name}</p>
+                            <p className="product-info-type">{product.type}</p>
+                            <hr></hr>
+                        </div>
+
+                        <p className="product-info-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus libero rerum ipsum voluptate accusantium delectus laborum, aliquam ratione quasi excepturi recusandae itaque, ut nulla. Modi iure tempora dolor laboriosam.</p>
+                        <div className="product-page-function">
+                            <svg width="100%" height="30px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><path d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"/></svg>
+                            <svg width="100%" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 11.5C9 12.8807 7.88071 14 6.5 14C5.11929 14 4 12.8807 4 11.5C4 10.1193 5.11929 9 6.5 9C7.88071 9 9 10.1193 9 11.5Z" stroke="#1C274C" stroke-width="1.5"/>
+                                <path opacity="0.5" d="M14.3206 16.8017L9 13.29" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                <path opacity="0.5" d="M14.4207 6.83984L9.1001 10.3515" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M19 18.5C19 19.8807 17.8807 21 16.5 21C15.1193 21 14 19.8807 14 18.5C14 17.1193 15.1193 16 16.5 16C17.8807 16 19 17.1193 19 18.5Z" stroke="#1C274C" stroke-width="1.5"/>
+                                <path d="M19 5.5C19 6.88071 17.8807 8 16.5 8C15.1193 8 14 6.88071 14 5.5C14 4.11929 15.1193 3 16.5 3C17.8807 3 19 4.11929 19 5.5Z" stroke="#1C274C" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <p style={{textAlign:"left",fontWeight:"bold",fontSize:"30px",margin:"50px 0px -20px 5%"}}>Now At,</p>
+                        <p className="product-info-price">RM {product.price.toFixed(2)}</p>
+
+                        <button className="product-page-card-button">Buy Now</button>
+                        <p>More Desc Below</p>
+                    </div>
+
+                    
+                </div>
+
+                <div className="page-section">
+                    <p className="section-heading">Specifications</p>
+                    <Specs_item name="Weight" value="100g"></Specs_item>
+                    <Specs_item name="Fresh Before" value="20 Days"></Specs_item>
+                    <Specs_item name="Ingredient" value="Banana, Sugar, Salt, Drugs"></Specs_item>
+                </div>
+
+            </div>
+        </>
+    );
+}
+
+export default ProductPage

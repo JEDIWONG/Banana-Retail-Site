@@ -1,0 +1,68 @@
+.pagination-container{
+    text-align: center;
+    background-color: #ffffff;
+    padding-block: 20px;
+}
+
+.active-pagination-button, .pagination-button{
+    cursor: pointer;
+    height: 15px;
+    width: 5%;
+    margin: 0 2%;
+    background-color: #000000;
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-pagination-button,.pagination-button:hover{
+    background-color: gold;
+}
+
+
+.carousel-img-container{
+    background-color: rgb(45, 45, 45,0.8);
+}
+
+.carousel-img{
+    height: 500px;
+    width: 80%;
+}
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carousel-container h2{
+    background-color: goldenrod;
+    color: rgb(42, 42, 42);
+    margin-inline: 20%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev{
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
