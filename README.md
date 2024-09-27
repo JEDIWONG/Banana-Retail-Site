@@ -2,6 +2,9 @@
 
 The web application features the frontend application of a retail site that sells and promote banana-centered product. It demostrates futher utilization of React framework on building web based project. 
 
+# How To Run 
+
+Clone the repo, Install Node.Js, Run Using Vite
 
 # Tech Stack
 
