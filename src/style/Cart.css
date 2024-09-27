@@ -1,0 +1,161 @@
+.cart-page{
+    background-color: rgb(241, 241, 241);
+    padding-block: 50px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-inline: 15%;
+    margin-top: 10px;
+    padding-left: 3%;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+    width: fit-content;
+    background-color: rgb(85, 187, 255);
+}
+
+.cart-item input{
+    width: 3%;
+    height: 30px;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.cart-card{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(92, 58, 0);
+    box-shadow: 0px 0px 10px;
+    margin-top: 50px;
+    width: 70%;
+    height: fit-content;
+    
+}
+
+.cart-card-details hr{
+
+    background-color: rgb(255, 196, 0);
+    width: 80%;
+    height: 5px;
+    border: none;
+    margin-left: 0%;
+    border-radius: 30px;
+}
+
+.cart-card img{
+    width: 40%;
+}
+
+.cart-card input{
+    width: 10%;
+    text-align: right;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 10%;
+}
+
+.cart-card-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.cart-price{
+    color: rgb(255, 196, 0);
+    font-size: 20px;
+    position: relative;
+    left: 40%;
+}
+
+.cart-price-total{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    font-size: 24px;
+    padding-inline: 3%;
+    padding-block: 20px;
+    align-content: center;
+    text-align: right;
+    margin: 0px;
+
+}
+
+.cart-name{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.checkbox-all{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 20px;
+    width: 10%;
+    box-shadow: 0px 0px 3px rgb(130, 130, 130);
+    background-color: rgb(0, 174, 255);
+    color: white;   
+    margin-bottom: 50px;
+}   
+
+.checkbox-all input{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin-inline: 10%;
+}
+
+.cart-total-section{
+    background-color: rgb(255, 174, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 10%;
+    padding-block: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.cart-total-section label{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(138, 0, 0);
+    margin-left: 60%;
+}
+
+.cart-total-section p{
+    font-size: 26px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 165, 0);
+    padding-inline: 3%;
+    padding-block: 10px;
+    border-radius: 30px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.checkout-button{
+    background-color: rgb(0, 190, 0);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    border: none;
+    box-shadow: 0px 1px 5px black;
+    padding-block: 10px;
+}

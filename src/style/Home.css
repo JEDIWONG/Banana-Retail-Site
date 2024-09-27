@@ -1,5 +1,4 @@
 .home-why-container{
-    
     width: 100%;
     text-align: center;
 }
@@ -19,17 +18,6 @@
     font-size: 20px;
 }
 
-.home-section{
-    margin-inline: 5%;
-    margin-bottom: 70px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgb(76, 76, 76);
-    padding-top: 10px;
-    padding-bottom: 100px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 100px;
-}
-
 .home-section-card{
     display: flex;
     flex-direction: row;
@@ -39,29 +27,6 @@
     height: fit-content;
     margin-inline: 20%;
     margin-bottom: 5%;
-}
-
-.home-section-card img{
-    width: 50%;
-
-}
-
-.home-section-details{
-    width: 50%;
-    background-color: rgb(69, 61, 1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-}
-
-.home-section-details p{
-    color: rgb(190, 220, 116);
-    text-align: justify;
-    margin-inline: 20%;
-    margin-top: 80px;
-    text-shadow: 0px 0px 10px black;
-    font-size: 18px;
 }
 
 .home-button{
@@ -85,26 +50,107 @@
     
 }
 
-.home-member-card{
+.home-card{
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 30px rgb(98, 98, 98);
-    border-radius: 10px;
+    flex-direction: row;
+    width: 100%;
     padding-inline: 1%;
-    border: 10px dashed black;
+    color: gold;
 }
 
-.home-member-card h1{
+.home-card h1{
     text-align: center;
-    font-size: 48px;
-
+    font-size: 32px;
+    padding-inline: 10%;
+    width: 30%;
+    color: rgb(251, 200, 139);
 }
 
-.home-member-card ul{
-    padding-block: 10px;
+.home-card h2{
+    color: white;
+    align-items: center;
+    padding-inline: 1%;
+    width: 100%;
 }
 
+.home-card h2::before{
+    content: "| ";
+    font-size: 40px;
+    color: gold;
+}
 
+.obj-card{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    left: 8%;
+    align-self: center;
+}
 
+.obj-card-details{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: rgb(43, 43, 43);
+    padding-inline: 10%;
+    position: relative;
+    left: -5%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow:5px 10px 5px rgb(0, 0, 0);
+}
+
+.obj-card img{
+    width: 20%;
+    border-radius: 100px;
+    border: 8px solid rgb(255, 191, 0);
+    box-shadow:-5px 5px 5px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.obj-card-title{
+    color: gold;
+    text-align: center;
+}
+
+.obj-card-desc{
+    color: rgb(255, 253, 199);
+    padding-inline: 10%;
+}
+
+.obj-card button{
+    background-color: rgb(0, 136, 255);
+    border: none;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30%;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    position: relative;
+    left: 10%;
+    align-self: center;
+}
+
+.section-heading-alt{
+    align-content: center;
+    margin-left: 10%;
+    background-image: linear-gradient(rgb(255, 179, 0) 30%,rgb(253, 201, 79));
+    color: rgb(95, 0, 0);
+    padding-inline: 3%;
+    border-radius: 100%;
+    font-size: 28px;
+    box-shadow: 0px 0px 10px;
+    width: 15%;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.home-section{
+    background-color: rgb(60, 61, 55);
+    padding-block: 80px;
+    border-top: 5px dashed goldenrod;
+    margin: 0px;
+}
