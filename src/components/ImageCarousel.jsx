@@ -1,4 +1,4 @@
-import { buttonBaseClasses } from "@mui/material";
+
 import img01 from "../assets/product_01.jpg";
 import img02 from "../assets/product_02.jpg";
 import img03 from "../assets/product_03.jpg";
@@ -48,6 +48,7 @@ function ImageCarousel(){
 
             <div className="carousel-container">    
                 
+                <h3>“ More Than Just Bananas ”</h3>
                 <div className="carousel-img-container">
                     <p class="prev" onClick={prev_img}>&#10094;</p>
                     <img className="carousel-img" src={Img}></img>
@@ -56,9 +57,11 @@ function ImageCarousel(){
 
                 <div className="pagination-container">
                     <h2>{desc[0]}</h2>
-                    <span className='pagination-button' style={{backgroundColor:"gold"}} onClick={()=>toimg(0)}></span>
-                    <span className='pagination-button' onClick={()=>toimg(1)}></span>
-                    <span className='pagination-button' onClick={()=>toimg(2)}></span>
+                    <div className="pagination-button-group">
+                        <span className='pagination-button' style={{backgroundColor:"white"}} onClick={()=>toimg(0)}></span>
+                        <span className='pagination-button' onClick={()=>toimg(1)}></span>
+                        <span className='pagination-button' onClick={()=>toimg(2)}></span>
+                    </div>                 
                 </div>
             </div>
 

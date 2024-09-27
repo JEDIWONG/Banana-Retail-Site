@@ -1,40 +1,48 @@
 import "../style/Home.css"
 import exp from "../assets/placeholder_01.jpg";
 import ImageCarousel from "./ImageCarousel";
+import { Button } from "@mui/material";
+
+function ObjCard(props){
+    return(
+        <>
+            <div className="obj-card">
+                <img src={props.img}></img>
+                <div className="obj-card-details">
+                    <div>
+                        <h1 className="obj-card-title">{props.title}</h1>
+                        <p className="obj-card-desc">{props.desc}</p>
+                    </div>
+                    <button>{props.btnText}</button>
+                </div>
+
+                
+            </div>  
+        </>
+    )
+}
 
 function Home() {
     
   return (
     <>
-        <div className="page-container">
+        <div>
 
             <ImageCarousel></ImageCarousel>
-            
         
-            <div className="page-section" style={{backgroundColor:"rgb(255,255,205,0.9)"}}>
-                <div className="section-heading">What We Provides</div>
+            <div className="home-section">
                 
-                <div className="home-section-card">
-                    <img src={exp}></img>
-                    <div className="home-section-details">
-                        <div className="section-heading-2">Fresh Banana</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus maiores minima, dolores natus rerum laudantium animi error doloribus. Mollitia odio, eaque aliquid neque eum quasi. Omnis reiciendis dolor saepe ullam?</p>
-                        <button className="home-button">Shop Now</button>
-                    </div>
+                <ObjCard img={exp} title="Fresh Banana Delivery" desc="Variety Of Product Awaiting From Farm-To-Table Banana To Snacks" btnText="Shop Now"></ObjCard>
+                <div style={{display:'flex',flexDirection:"row"}}>
+                    <h1 className="section-heading-alt">What We Provides</h1>
+                    <ObjCard img={exp} title="Banana In-Store" desc="Come grab a banana from one of our branch located in Malaysia " btnText="Locate Us"></ObjCard>
                 </div>
-
-                <div className="home-section-card">
-                    <img src={exp}></img>
-                    <div className="home-section-details">
-                        <div className="section-heading-2">Subscription Service</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus maiores minima, dolores natus rerum laudantium animi error doloribus. Mollitia odio, eaque aliquid neque eum quasi. Omnis reiciendis dolor saepe ullam?</p>
-                        <button className="home-button">Learn More</button>
-                    </div>
-                </div>
-
+                <ObjCard img={exp} title="Banana Eating Passion" desc="Our organization has deep enthusiast on promoting the great taste of banana " btnText="Learn More"></ObjCard>
+                
+                
             </div>
 
-            <div className="home-section">
+            <div className="page-section" style={{margin:"0px"}}>
 
                 <h1 className="section-heading">Why Us ?</h1>
 
@@ -91,36 +99,24 @@ function Home() {
                 
             </div>
 
-            <div className="home-section">
+            <div className="page-section" style={{margin:"0px",backgroundColor:"black"}}>
                 <h1 className="section-heading">Join Us Today</h1>
 
-                <div style={{display:"flex",flexDirection:"row",marginInline:"10%"}}>
+                <div className="home-card">
 
-                    <div className="home-member-card">
-                        <h1>Free Tier</h1>
+                    <h1>“ You Can Become One Of Enjoy The Dope Flavour Of Banana Specially Manufactured By Us ”</h1>
+                    <div>
+                        <h2>Benefits and Perks</h2>
                         <ul>
-                            <li>Without Any Charge</li>
-                            <li>Nothing Special </li>
-                            <li>No Free Banana</li>
-                            <li>Upgradeable</li>
+                            <li>Limited Time Offer Throughout The Year</li>
+                            <li>Free Gift For First Time User</li>
+                            <li>Various Opportunity</li>
                         </ul>
+                        
                     </div>
-
-                    <p style={{alignContent:"center",marginInline:"10%",fontSize:"32px"}}>OR</p>
-
-                    <div className="home-member-card">
-                        <h1>Membership</h1>
-                        <ul>
-                            <li>Weekly Banana Gift</li>
-                            <li>Reasonable Charge</li>
-                            <li>Tons Of Rewards</li>
-                            <li>Cancel Anytime</li>
-                        </ul>
-                    </div>
-
                 </div>
                 
-                <button className="home-button" style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}>Register New Account Here</button>
+                <button className="home-button" style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}>Register Here</button>
             </div>
 
         </div>
