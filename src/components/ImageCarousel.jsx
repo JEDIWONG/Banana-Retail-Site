@@ -55,12 +55,10 @@ function ImageCarousel(){
                 </div>
 
                 <div className="pagination-container">
-                    <h2>{desc}</h2>
-                    <div className="pagination-button-group">
-                        <span className='pagination-button' style={{backgroundColor:"white"}} onClick={()=>toimg(0)}></span>
-                        <span className='pagination-button' onClick={()=>toimg(1)}></span>
-                        <span className='pagination-button' onClick={()=>toimg(2)}></span>
-                    </div>                 
+                    <h2>{desc[0]}</h2>
+                    <span className='pagination-button' style={{backgroundColor:"gold"}} onClick={()=>toimg(0)}></span>
+                    <span className='pagination-button' onClick={()=>toimg(1)}></span>
+                    <span className='pagination-button' onClick={()=>toimg(2)}></span>
                 </div>
             </div>
 
