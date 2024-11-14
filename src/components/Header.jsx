@@ -7,8 +7,8 @@ function Header(){
         <>
             <header className="header-container">
                 
-                <Link to="../YakBanana" className="logo">               
-                    <img src={logo}></img>
+                <Link to="../Banana-Retail-Site" className="logo">               
+                    <img src={logo} className="logo-img"></img>
                     <p>SmokeBanana</p>
                         
                 </Link>
@@ -16,27 +16,27 @@ function Header(){
 
                 <ul className="navigation-bar">
 
-                    <Link to="../YakBanana/shop" className="link">
+                    <Link to="../Banana-Retail-Site/shop" className="link">
                         <li>Shop</li>
                     </Link>
 
-                    <Link className="link">
+                    <Link to="../Banana-Retail-Site/cart" className="link">
                         <li>Cart</li>
                     </Link>
 
                     <div className="dropdown">
                         <li>More +</li>
                         <div className="dropdown-content">
-                            <Link to="../YakBanana/about" className="link">
+                            <Link to="../Banana-Retail-Site/about" className="link">
                                 <li>About Us</li>
                             </Link>
-                            <Link to="../YakBanana/contact" className="link">
+                            <Link to="../Banana-Retail-Site/contact" className="link">
                                 <li>Contact Us</li>
                             </Link>
-                            <Link className="link">
+                            <Link to="../Banana-Retail-Site/locate us" className="link">
                                 <li>Locate Us</li>
                             </Link>
-                            <Link className="link" to="../YakBanana/Help">
+                            <Link className="link" to="../Banana-Retail-Site/Help">
                                 <li>Help</li>
                             </Link>
                         </div>

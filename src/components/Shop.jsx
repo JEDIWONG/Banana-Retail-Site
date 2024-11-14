@@ -5,7 +5,7 @@ function Shop(){
 
     return(
         <>
-            <div className="page-container" style={{marginBottom:"200px"}}>
+            <div className="page-container" style={{marginBottom:"0px"}}>
 
                 <div className="page-title">
                     <h1>Catalogue</h1>

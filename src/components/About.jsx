@@ -10,8 +10,12 @@ function About(){
                 <div className="about-history">    
                     <div className="about-img"></div>
                     <div className="about-history-detail">
-                        <p className="about-history-title">Our History</p>
-                        <hr></hr>
+
+                        <p className="about-history-title">
+                            Who Are We ? 
+                        </p>
+
+                        
                         <p className="about-history-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, necessitatibus eaque quibusdam amet, numquam maiores similique nihil culpa iusto esse in ab rem dolor atque quos nemo quod a assumenda.</p>
                     </div>
                 </div>

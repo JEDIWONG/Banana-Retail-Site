@@ -1,12 +1,9 @@
-import { buttonBaseClasses } from "@mui/material";
-import img01 from "../assets/product_01.jpg";
-import img02 from "../assets/product_02.jpg";
-import img03 from "../assets/product_03.jpg";
+import { Product } from "./Product";
 import "../style/ImageCarousel.css"
 import { useEffect, useState } from "react";
 
-const descArr = [["Banana Milk Shake","Never Try Never Know"],["Banana Yogurt","Hope Toilet Not Far From You"],["Banana Ice Cream","Special On This Summer"]]; 
-const imgArr = [img01,img02,img03];
+const descArr = [Product[3].name,Product[4].name,Product[5].name]
+const imgArr = [Product[3].imgUrl,Product[4].imgUrl,Product[5].imgUrl];
 
 function ImageCarousel(){
 
@@ -18,6 +15,7 @@ function ImageCarousel(){
     const nx_img=()=>{
         if(index<2){
             setIndex(index+1);
+            setDesc(descArr[index+1]);
             setImg(imgArr[index+1]);
         }
     }
@@ -25,6 +23,7 @@ function ImageCarousel(){
     function prev_img(){
         if(index>0){
             setIndex(index-1);
+            setDesc(descArr[index-1]);
             setImg(imgArr[index-1]);
         }
     }
@@ -48,6 +47,7 @@ function ImageCarousel(){
 
             <div className="carousel-container">    
                 
+                <h3>“ More Than Just Bananas ”</h3>
                 <div className="carousel-img-container">
                     <p class="prev" onClick={prev_img}>&#10094;</p>
                     <img className="carousel-img" src={Img}></img>
@@ -55,10 +55,12 @@ function ImageCarousel(){
                 </div>
 
                 <div className="pagination-container">
-                    <h2>{desc[0]}</h2>
-                    <span className='pagination-button' style={{backgroundColor:"gold"}} onClick={()=>toimg(0)}></span>
-                    <span className='pagination-button' onClick={()=>toimg(1)}></span>
-                    <span className='pagination-button' onClick={()=>toimg(2)}></span>
+                    <h2>{desc}</h2>
+                    <div className="pagination-button-group">
+                        <span className='pagination-button' style={{backgroundColor:"white"}} onClick={()=>toimg(0)}></span>
+                        <span className='pagination-button' onClick={()=>toimg(1)}></span>
+                        <span className='pagination-button' onClick={()=>toimg(2)}></span>
+                    </div>                 
                 </div>
             </div>
 

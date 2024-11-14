@@ -1,0 +1,38 @@
+.location-group-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    border: 5px solid rgb(255, 204, 0);
+    background-color: rgba(51, 51, 51, 0.5);
+    margin-inline: 8%;
+}
+
+
+.location-card{
+    margin-inline: 5%;
+    box-shadow: 0px 0px 10px rgb(101, 101, 101);
+    background-color: rgb(246, 233, 107);
+}
+
+.location-card-img{
+    width: 100%;
+}
+
+.location-card-city{
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.location-card-addr{
+    padding-inline:5%;
+    font-size: 18px;
+}
+.location-card-phone{
+    color: blueviolet;
+    text-decoration: underline solid;
+    padding-left: 3%;
+}
+

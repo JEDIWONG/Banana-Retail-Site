@@ -1,6 +1,9 @@
 import { useParams } from "react-router-dom";
 import "../style/ProductPage.css"
+import { styled } from '@mui/material/styles';
 import { Product } from "./Product";
+import Rating from '@mui/material/Rating';
+import LinearProgress,{linearProgressClasses} from '@mui/material/LinearProgress';
 
 function Specs_item(props){
 
@@ -14,6 +17,61 @@ function Specs_item(props){
     );
 
 }
+
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+    width:300,
+    height: 10,
+    borderRadius: 5,
+    alignSelf:"center",
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor: theme.palette.grey[200],
+      ...theme.applyStyles('dark', {
+        backgroundColor: theme.palette.grey[800],
+      }),
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 5,
+      backgroundColor: '#1a90ff',
+      ...theme.applyStyles('dark', {
+        backgroundColor: '#308fe8',
+      }),
+    },
+  }));
+
+function Review_Specs(props){
+
+    return(
+        <>
+            <div className="review-specs">
+                <div className="review-tag">
+                    {props.name}
+                </div>
+
+                <div style={{alignSelf:"center",display:'flex',flexDirection:"column"}}>
+                    <p style={{color:"green",fontSize:"24px"}}>Impressive</p>
+                    <BorderLinearProgress variant="determinate" value={80}></BorderLinearProgress>
+                </div>
+            </div>
+        </>
+    );
+
+}
+
+function UserComment(props){
+    return(
+        <>
+            <div className="comment-container">
+                <div className="comment-rating">
+                    <p>Human one</p>
+                    <Rating value={props.value} readOnly></Rating>
+                </div>
+                
+                <p className="comment-desc">{props.desc}</p>
+            </div>
+        </>
+    )
+}
+
 
 function ProductPage(){
 
@@ -75,6 +133,49 @@ function ProductPage(){
                     <Specs_item name="Ingredient" value="Banana, Sugar, Salt, Drugs"></Specs_item>
                 </div>
 
+                <div className="page-section">
+                    <p className="section-heading">Rating & Review</p>
+                    
+                    <div className="review-container">                           
+                        
+                        <div style={{display:"flex",flexDirection:"row",width:"100%"}}>
+                            <div className="review-score">
+                                <p className="review-score-value">4.0</p>
+                                <div className="rating">
+                                    <p className="review-score-comment" >Overall Great !</p>
+                                    <Rating size="large" value={4}readOnly></Rating>
+                                </div>
+                                
+                            </div>
+
+                            
+
+                            <div className="review-score-overall">
+                                <Review_Specs name="Taste"></Review_Specs>
+                                <Review_Specs name="Freshness"></Review_Specs>
+                                <Review_Specs name="Appearance"></Review_Specs>
+                            </div>
+                        </div>
+
+                        <button>Write Review</button>
+                    </div>
+
+                    <div className="comment-section">
+                        <h1>User Review</h1>
+                        
+                        <UserComment value={5} desc="Feels like living in amazon"></UserComment>
+                        <UserComment value={3} desc="Amateur"></UserComment>
+                        <UserComment value={2} desc="Like drinking ubat batuk"></UserComment>
+                        <button>Expand More</button>
+                    </div>
+                </div>
+                
+                <div className="add-cart">
+                    <p>Add To Cart</p>
+                    <button>+</button>
+                    <div>0</div>
+                    <button>-</button>
+                </div>
             </div>
         </>
     );

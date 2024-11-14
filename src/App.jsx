@@ -8,6 +8,8 @@ import Contact from "./components/Contact.jsx"
 import About from "./components/About.jsx"
 import ProductPage from "./components/ProductPage.jsx"
 import Help from "./components/Help.jsx"
+import LocateUs from "./components/LocateUs.jsx"
+import Cart from "./components/Cart.jsx"
 
 function App() {
   
@@ -16,15 +18,17 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/YakBanana/" element={<Layout />}>
+          <Route path="/Banana-Retail-Site/" element={<Layout />}>
             <Route index element={<Home/>} />
             <Route path="login" element={<Login/>}/>
             <Route path="shop" element={<Shop/>}/>
+            <Route path="cart" element={<Cart/>}/>
             <Route path="contact" element={<Contact/>}></Route>
             <Route path="about" element={<About/>}></Route>
             <Route path="registration" element={<Registration/>}/>
             <Route path="shop/catalogue/:id" element={<ProductPage/>}/>
             <Route path="help" element={<Help/>}></Route>
+            <Route path="locate us" element={<LocateUs/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
