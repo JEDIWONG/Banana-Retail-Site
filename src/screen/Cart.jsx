@@ -1,36 +1,6 @@
 import "../style/Cart.css"
-import {Product} from "../components/Product.jsx"
-
-function CartItem(props){
-    return(
-        <>
-            <div className="cart-item">
-                <input type="checkbox"></input>
-                <div className="cart-card">
-                    <img src={props.imgUrl}></img>
-                    
-                    <div className="cart-card-details">
-                        
-                        <p className="cart-name">{props.name}</p>
-                        <hr></hr>
-
-                        <div style={{display:'flex',flexDirection:'row',alignItems:"center",marginTop:"20px",marginBottom:"10px"}}>
-                            
-                            <input type="number" placeholder="1"></input>
-                            <p style={{position:'relative',left:"12%",color:"gold"}}>Pax</p>
-                            <p className="cart-price">RM {props.price.toFixed(2)} Each</p>
-                        </div>
-                        
-                        <p className="cart-price-total">TOTAL : RM {props.price.toFixed(2)}</p>
-                    </div>
-                    
-                </div>
-
-            </div>
-            
-        </>
-    );
-}
+import {Product} from "../model/Product.jsx"
+import CartItem from "../components/CartItem.jsx";
 
 function Cart(){
     return(
@@ -48,7 +18,7 @@ function Cart(){
                     </div>
                     
                     <CartItem imgUrl={Product[0].imgUrl} name={Product[0].name} quantity={1} price={Product[0].price}></CartItem>
-                    <CartItem imgUrl={Product[0].imgUrl} name={Product[0].name} quantity={1} price={Product[0].price}></CartItem>
+                    <CartItem imgUrl={Product[2].imgUrl} name={Product[2].name} quantity={1} price={Product[2].price}></CartItem>
                     
                     <div className="cart-total-section">
                         <label>TOTAL </label>

@@ -1,13 +1,12 @@
 import prod_1 from "../assets/product_images/product_01.jpg";
 import prod_2 from "../assets/product_images/product_02.jpg";
 import prod_3 from "../assets/product_images/product_03.jpg";
-import prod_4 from "../assets/product_images/product_04.jpg";
-import prod_5 from "../assets/product_images/product_05.jpg";
+import prod_4 from "../assets/product_images/product_04.png";
+import prod_5 from "../assets/product_images/product_05.png";
 import prod_6 from "../assets/product_images/product_06.jpg";
 import prod_7 from "../assets/product_images/product_07.jpg";
 import prod_8 from "../assets/product_images/product_08.jpg";
 import prod_9 from "../assets/product_images/product_09.jpg";
-
 
 export const Product = [
 

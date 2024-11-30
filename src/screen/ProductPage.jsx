@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import "../style/ProductPage.css"
 import { styled } from '@mui/material/styles';
-import { Product } from "../components/Product";
+import { Product } from "../model/Product";
 import Rating from '@mui/material/Rating';
 import LinearProgress,{linearProgressClasses} from '@mui/material/LinearProgress';
 
@@ -72,7 +72,6 @@ function UserComment(props){
     )
 }
 
-
 function ProductPage(){
 
     const {id} = useParams();
@@ -81,12 +80,13 @@ function ProductPage(){
     return(
         <>
             <div className="product-page-container">
-                
+            
                 <div className="product-page-card">
+                    
                     <div className="product-gallery">
-                    <button className="button-back">Back</button>
+                        <button className="btn-filled">Back</button>
                         <img className="product-page-image" src={product.imgUrl}></img>
-
+                        
                         <div className="product-gallery-container">
                             <img className="product-page-image" src={product.imgUrl}></img>
                             <img className="product-page-image" src={product.imgUrl}></img>

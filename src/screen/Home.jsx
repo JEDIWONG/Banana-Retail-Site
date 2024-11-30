@@ -2,24 +2,8 @@ import "../style/Home.css"
 import exp from "../assets/placeholder_01.jpg";
 import IntroCard from "../components/IntroCard";
 import intro from "../assets/intro.png"
+import ObjCard from "../components/ObjCard";
 
-function ObjCard(props){
-    return(
-        <>
-            <div className="obj-card">
-                <img src={props.img}></img>
-                <div className="obj-card-details">
-                    <div>
-                        <h1 className="obj-card-title">{props.title}</h1>
-                        <p className="obj-card-desc">{props.desc}</p>
-                    </div>
-                    <button>{props.btnText}</button>
-                </div>
-                
-            </div>  
-        </>
-    )
-}
 
 function Home() {
     
@@ -33,16 +17,35 @@ function Home() {
 
         <div className="home-section">
             
-            <ObjCard img={exp} title="Fresh Banana Delivery" desc="Variety Of Product Awaiting From Farm-To-Table Banana To Snacks" btnText="Shop Now"></ObjCard>
+            <ObjCard 
+                img={exp} 
+                title="Fresh Banana Delivery" 
+                desc="Variety Of Product Awaiting From Farm-To-Table Banana To Snacks" 
+                btnText="Shop"
+                url="shop/"
+            />
+
             <div style={{display:'flex',flexDirection:"row"}}>
                 <h1 className="section-heading-alt">What We Provides</h1>
-                <ObjCard img={exp} title="Banana In-Store" desc="Come grab a banana from one of our branch located in Malaysia " btnText="Locate Us"></ObjCard>
+                <ObjCard 
+                    img={exp} 
+                    title="Banana In-Store" 
+                    desc="Come grab a banana from one of our branch located in Malaysia " 
+                    btnText="Location"
+                    url="locate us/"
+                />
             </div>
-            <ObjCard img={exp} title="Banana Eating Passion" desc="Our organization has deep enthusiast on promoting the great taste of banana " btnText="Learn More"></ObjCard>
+            <ObjCard 
+                img={exp} 
+                title="Banana Eating Passion" 
+                desc="Our organization has deep enthusiast on promoting the great taste of banana " 
+                btnText="Learn"
+                url="about/"
+            />
             
         </div>
 
-        <div className="page-section" style={{margin:"0px"}}>
+        <div className="page-section" style={{margin:"0px",backgroundColor:"rgb(28, 28, 28)"}}>
 
             <h1 className="section-heading">Why Us ?</h1>
 
@@ -116,7 +119,7 @@ function Home() {
                 </div>
             </div>
             
-            <button className="home-button" style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}>Register Here</button>
+            <button className="btn-filled" style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}>Register Here</button>
         </div>
     </>
   )

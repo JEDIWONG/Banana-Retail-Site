@@ -8,33 +8,6 @@ body{
   background-attachment: fixed;
 }
 
-h1{
-  text-align: center;
-}
-
-.page-title{
-  background-color: rgb(32, 32, 32,0.8);
-  color: white;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  width: 100%;
-  height: fit-content;
-  margin-top: 0px;
-  
-}
-
-.page-title h1{
-  font-size: 45px;
-}
-
-.page-title hr{
-  width: 60%;
-  height: 3px;
-  background-color: goldenrod;
-  border: none;
-}
-
 .header-container{
   width: 100%;
   height: 80px;
@@ -51,14 +24,14 @@ h1{
 .logo{
   display: flex;
   flex-direction: row;
-  width: 20%;
-  margin-left: 40%;
+  margin-right: 50%;
   text-decoration: none;
 }
 
 .logo-img{
   border-radius: 100px;
   box-shadow: 0px 1px 3px;
+  margin-left: 20%;
 }
 
 .logo p{
@@ -73,9 +46,9 @@ h1{
 .navigation-bar{
   display: flex;
   flex-direction: row;
-  margin: 0px;
   align-self: center;
-  width: 100%;
+  align-items: center;
+  width: 50%;
 }
 
 .navigation-bar li{ 
@@ -84,35 +57,62 @@ h1{
   color: rgb(130, 17, 49);
   font-weight: bold;
   font-size: 22px;
-  width:110%;
+  margin-inline:5%;
 }
 
 .dropdown{
-  margin-left: 10%;
+  padding-inline: 5%;
+  padding-block:1% ;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(130, 17, 49);
+}
+
+.dropdown p{
+  color: gold;
+  margin: 0px;
 }
 
 .dropdown-content{
   display: none;
-  width: 10%;
+  width: 20%;
+  background-color: black;
   box-shadow: 10px 1px 10px grey;
+  text-align: left;
 }
 
 .dropdown-content li{
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
-  background-color: rgb(255, 237, 147);
-  
+  color: gold;
 }
 
 .dropdown-content li:hover{
   background-color: gold;
+  color: black;
 }
 
 .dropdown:hover .dropdown-content{
   display: flex;
   flex-direction: column;
   position: fixed;
+  right: 30px;
+}
+
+.dropdown-account{
+  text-decoration: none;
+  font-size: 24px;
+  padding-inline: 5%;
+  padding-block: 3%;
+}
+
+.dropdown-account p{
+  color: white;
+}
+
+.dropdown-account svg{
+  width: 30%;
 }
 
 .footer-container{
@@ -179,13 +179,6 @@ h1{
 
 .footer-link li{
   margin-top: 10px;
-}
-
-
-.link{
-  text-decoration: none;
-  margin-inline: 5%;
-  color: rgb(141, 0, 0);
 }
 
 .page-section{
@@ -263,10 +256,9 @@ h1{
 }
 
 .btn-outlined{
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  font-weight: bold;
+  background-color: inherit;
+  color: gold;
+  border: 3px solid gold;
   font-size: 24px;
   border-radius: 10px;
   padding-inline: 5%;
@@ -274,6 +266,39 @@ h1{
   box-shadow: 3px 3px 3px black;
 }
 
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1{
+  text-align: center;
+}
+
+.page-title{
+  background-color: rgb(32, 32, 32,0.8);
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+.page-title h1{
+  font-size: 45px;
+}
+
+.page-title hr{
+  width: 60%;
+  height: 3px;
+  background-color: goldenrod;
+  border: none;
 }

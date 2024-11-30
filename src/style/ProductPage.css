@@ -1,50 +1,59 @@
 .product-page-container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .button-back{
-    width: 10%;
-    height: 50px;
-    margin-top:10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    background-color: rgb(29, 159, 246);
-    border: none;
-    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    top: 20%;
 }
 
 .product-page-card{
     display: flex;
     flex-direction: row;
     background-color: white;
-    width: 100%;
+    padding-block: 50px;
 }
 
 .product-gallery{
+    display: flex;
+    flex-direction: column;
     width: 70%;
+    align-items: center;
+    align-content: center;
     background-color: rgb(48, 48, 48);
     box-shadow: 0px 1px 1px;
-    padding: 10px;
+    padding-inline: 5%;
+    padding-block: 150px;
 }
+
+.product-gallery button{
+    align-self: baseline;
+}
+
 .product-page-image{
-    width: 100%;
+    width: 500px;
+    height: 300px;
     margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    background-color: white;
 }
 
 .product-gallery-container{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    margin-inline: 10%;
+    margin-inline:5%;
+    margin-top: 50px;
 }
 
 .product-gallery-container img{
-    width: 20%;
-    margin-right: 10%;
+    width: 150px;
+    height: 100px;
+    margin-right: 20%;
 }
 
 .product-page-info{

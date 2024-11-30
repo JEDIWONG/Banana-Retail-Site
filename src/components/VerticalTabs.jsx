@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import banana from "../assets/bananaIcon.svg";
 import drink from "../assets/drinkIcon.svg";
 import candy from "../assets/candyIcon.svg";
-import { Product } from './Product';
+import { Product } from '../model/Product';
 import ProductCard from './productCard';
 import { Link } from 'react-router-dom';
 

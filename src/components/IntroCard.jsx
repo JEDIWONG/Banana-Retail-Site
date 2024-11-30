@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../style/IntroCard.css"
 
 function IntroCard(props){
@@ -10,7 +11,14 @@ function IntroCard(props){
                     <h1>{props.title}</h1>
                     <p>{props.desc}</p>
                     <div className="intro-button-bar">
-                        <button className="btn-filled">Shop</button>
+
+                        <button className="btn-filled">
+                            <Link className="link" to="shop/">
+                                Shop
+                            </Link>
+                        </button>
+                        
+                        
                         <button className="btn-outlined">About</button>
                     </div>
                 </div>
