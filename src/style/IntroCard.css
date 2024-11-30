@@ -1,0 +1,44 @@
+.intro-card-container{
+    display: flex;
+    flex-direction: row;
+    padding-block: 50px;
+    background-color: rgb(37, 37, 37);
+    color: wheat;
+}
+
+.intro-card-details{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+    align-self: center;
+}
+
+.intro-card-details h1{
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-left: 10%;
+    text-shadow: 1px 1px 1px;
+}
+
+.intro-card-details p{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20%;
+    color: rgb(255, 102, 0);
+}
+
+.intro-card-container img{
+    margin-top: 100px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.intro-button-bar{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 30%;
+}

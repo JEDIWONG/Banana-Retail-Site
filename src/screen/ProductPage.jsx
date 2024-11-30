@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import "../style/ProductPage.css"
 import { styled } from '@mui/material/styles';
-import { Product } from "./Product";
+import { Product } from "../components/Product";
 import Rating from '@mui/material/Rating';
 import LinearProgress,{linearProgressClasses} from '@mui/material/LinearProgress';
 
