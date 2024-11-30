@@ -19,7 +19,12 @@ function IntroCard(props){
                         </button>
                         
                         
-                        <button className="btn-outlined">About</button>
+                        <button className="btn-outlined">
+
+                            <Link className="link" to="about/">
+                                About
+                            </Link>
+                        </button>
                     </div>
                 </div>
                 

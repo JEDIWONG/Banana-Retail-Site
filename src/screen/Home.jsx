@@ -3,6 +3,7 @@ import exp from "../assets/placeholder_01.jpg";
 import IntroCard from "../components/IntroCard";
 import intro from "../assets/intro.png"
 import ObjCard from "../components/ObjCard";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -119,7 +120,17 @@ function Home() {
                 </div>
             </div>
             
-            <button className="btn-filled" style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}>Register Here</button>
+            <button 
+                className="btn-filled" 
+                style={{width:"30%",marginLeft:"35%",marginTop:"5%"}}
+
+            >
+                <Link className="link" to="registration/">
+                    Register Here
+                </Link>
+                
+            
+            </button>
         </div>
     </>
   )
